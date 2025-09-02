@@ -1,0 +1,97 @@
+.customer-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.customer-form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.customer-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.customer-form input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+/* Submit Button */
+.customer-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.customer-form button:hover {
+  background: #45a049;
+  transform: scale(1.03);
+}
+
+.customer-form button:active {
+  background: #3e8e41;
+  transform: scale(0.97);
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .customer-form {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .customer-form h2 {
+    font-size: 20px;
+  }
+
+  .customer-form input,
+  .customer-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .customer-form {
+    max-width: 95%;
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .customer-form h2 {
+    font-size: 18px;
+  }
+
+  .customer-form input,
+  .customer-form button {
+    font-size: 14px;
+    padding: 9px;
+  }
+}

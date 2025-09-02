@@ -1,0 +1,58 @@
+.address-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.address-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.address-form input,
+.address-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .form-actions {
+    flex-direction: column;
+  }
+  .save-btn, .cancel-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
